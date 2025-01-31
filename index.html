@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise Bot</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            margin-top: 20px;
+            color: #333;
+        }
+        p {
+            color: #666;
+        }
+        df-messenger {
+            --df-messenger-bot-message: #4285F4;
+            --df-messenger-button-titlebar-color: #0B75C9;
+            --df-messenger-chat-background: #FFFFFF;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to Exercise Bot</h1>
+    <p>Ask me anything about workouts and fitness!</p>
+    
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+    <df-messenger
+      intent="WELCOME"
+      chat-title="Exercise_Bot"
+      agent-id="971f3be6-9257-4b3f-8a22-ca70717bb10b"
+      language-code="en"
+    ></df-messenger>
+</body>
+</html>
